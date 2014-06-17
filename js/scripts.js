@@ -334,3 +334,127 @@ $('a').click(function (event) {
 });   
    
  	
+//slider
+// settings
+var $slider = $('.slider'); // class or id of carousel slider
+var $slide = 'li'; // could also use 'img' if you're not using a ul
+var $transition_time = 1000; // 1 second
+var $time_between_slides = 4000; // 4 seconds
+
+function slides(){
+  return $slider.find($slide);
+}
+
+slides().fadeOut();
+
+// set active classes
+slides().first().addClass('active');
+slides().first().fadeIn($transition_time).fadeIn($transition_time);
+
+$("#next-slider").click(function () {
+
+if ($('.slider li:last-child').hasClass('active')) {
+	
+	jQuery('.slider li:first-child').addClass('active').css("display", "list-item");
+	jQuery('li.active').nextAll('li').removeClass('active').css("display", "none"); 
+    }
+else{
+jQuery('li.active').next('li').addClass('active').css("display", "list-item");
+
+jQuery('li.active').prevAll('li').removeClass('active').css("display", "none"); 
+}
+// slides().next().addClass('active');
+// slides().next().fadeIn($transition_time).fadeIn($transition_time);  
+});
+$("#prev-slider").click(function () {
+
+if ($('.slider li:first-child').hasClass('active')) {
+	
+	jQuery('.slider li:last-child').addClass('active').css("display", "list-item");
+	jQuery('li.active').prevAll('li').removeClass('active').css("display", "none"); 
+	
+    }
+else{
+jQuery('li.active').prev('li').addClass('active').css("display", "list-item");
+
+jQuery('li.active').nextAll('li').removeClass('active').css("display", "none"); 
+
+}
+// slides().next().addClass('active');
+// slides().next().fadeIn($transition_time).fadeIn($transition_time);  
+});
+
+// auto scroll 
+$interval = setInterval(
+    function(){
+      var $i = $slider.find($slide + '.active').index();
+    
+      slides().eq($i).removeClass('active');
+      slides().eq($i).fadeOut($transition_time);
+    
+      if (slides().length == $i + 1) $i = -1; // loop to start
+    
+      slides().eq($i + 1).fadeIn($transition_time);
+      slides().eq($i + 1).addClass('active');
+    }
+    , $transition_time +  $time_between_slides 
+);
+
+
+// carasel code
+
+
+var n = $(".carousel-slide-wrap").length,
+        width = 680,
+        newwidth = width * n;
+
+    $('.carouselex-wrap').css({
+        'width': newwidth
+    });
+
+    $(".carousel-slide-wrap").each(function (i) {
+        var thiswid = 110;
+        $(this).css({
+            'left': thiswid * i
+        });
+
+    });
+    /*on scroll move the indicator 'shown' class to the
+    most visible slide on viewport
+    */
+    $('.carousel-wrap').scroll(function () {
+        var scrollLeft = $(this).scrollLeft();
+        $(".carousel-slide-wrap").each(function (i) {
+            var posLeft = $(this).position().left
+            var w = $(this).width();
+           
+            if (scrollLeft >= posLeft && scrollLeft < posLeft + w) {
+              $(this).addClass('shown').siblings().removeClass('shown');
+            }
+        });
+    });
+    /* on left button click scroll to the previous sibling of the current visible slide */
+    $('#carousel-left').click(function () {
+        var $prev = $('.carouselex-wrap .shown').prev();
+
+        if ($prev.length) {
+            $('.carousel-wrap').animate({
+                scrollLeft: $prev.position().left
+            }, 'slow');
+        }
+    });
+    /* on right button click scroll to the next sibling of the current visible slide */
+    $('#carousel-right').click(function () {
+        var $next = $('.carouselex-wrap .shown').next();
+
+        if ($next.length) {
+            $('.carousel-wrap').animate({
+                scrollLeft: $next.position().left
+            }, 'slow');
+        }
+    });
+
+
+
+
+
