@@ -627,37 +627,43 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endCo
 }
 }
 @media (min-width: 1200px) {
- .grid1-large, .grid2-large, .grid3-large, .grid4-large, .grid5-large, .grid6-large, .grid7-large, .grid8-large, .grid9-large, .grid10-large {
+ .grid1-large, .grid2-large, .grid3-large, .grid4-large, .grid5-large, .grid6-large, .grid7-large, .grid8-large, .grid9-large, .grid10-large,.grid11-large,.grid12-large {
  float: left;
 }
- ..grid1-large {
- width: 10%;
+ .grid1-large {
+ width: 8.33%;
 }
  .grid2-large {
- width: 20%;
+ width: 16.66%;
 }
  .grid3-large {
- width: 30%;
+ width: 25%;
 }
  .grid4-large {
- width: 40%;
+ width: 33.33%;
 }
  .grid5-large {
- width: 50%;
+ width: 41.66%;
 }
  .grid6-large {
- width: 60%;
+ width: 50%;
 }
  .grid7-large {
- width: 70%;
+ width: 58.33%;
 }
  .grid8-large {
- width: 80%;
+ width: 66.66%;
 }
  .grid9-large {
- width: 90%;
+ width: 75%;
 }
  .grid10-large {
+ width: 83.33%;
+}
+.grid11-large {
+ width: 91.66%;
+}
+.grid12-large {
  width: 100%;
 }
 }
@@ -665,41 +671,44 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endCo
 
 /* Smartphones portrait and landscape */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
- .grid1-phone, .grid2-phone, .grid3-phone, .grid4-phone, .grid5-phone, .grid6-phone, .grid7-phone, .grid8-phone, .grid9-phone, .grid10-phone {
+ .grid1-phone, .grid2-phone, .grid3-phone, .grid4-phone, .grid5-phone, .grid6-phone, .grid7-phone, .grid8-phone, .grid9-phone, .grid10-phone,.grid11-phone, .grid12-phone {
  float: left;
 }
- .grid10-phone {
- width: 100%;
+ .grid1-phone {
+ width: 8.33%;
 }
-.grid9-phone {
- width:90%;
+ .grid2-phone {
+ width: 16.66%;
 }
-.grid8-phone {
- width: 80%;
+ .grid3-phone {
+ width: 25%;
 }
-.grid7-phone {
- width: 70;
+ .grid4-phone {
+ width: 33.33%;
 }
-.grid6-phone {
- width: 60%;
+ .grid5-phone {
+ width: 41.66%;
 }
-.grid5-phone {
+ .grid6-phone {
  width: 50%;
 }
-.grid4-phone {
- width: 40%;
+ .grid7-phone {
+ width: 58.33%;
 }
-.grid3-phone {
- width: 30%;
+ .grid8-phone {
+ width: 66.66%;
 }
-.grid2-phone {
- width: 20%;
+ .grid9-phone {
+ width: 75%;
 }
-.grid1-phone {
- width: 10%;
+ .grid10-phone {
+ width: 83.33%;
 }
- .grid-container {
- width: 750px;
+.grid11-phone {
+ width: 91.66%;
+}
+.grid12-phone {
+ width: 100%;
 }
 }
 
@@ -708,35 +717,41 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endCo
  .grid-container {
  width: 460px;
 }
- .grid10-phone {
- width: 100%;
+ .grid1-phone {
+ width: 8.33%;
 }
-.grid9-phone {
- width:90%;
+ .grid2-phone {
+ width: 16.66%;
 }
-.grid8-phone {
- width: 80%;
+ .grid3-phone {
+ width: 25%;
 }
-.grid7-phone {
- width: 70;
+ .grid4-phone {
+ width: 33.33%;
 }
-.grid6-phone {
- width: 60%;
+ .grid5-phone {
+ width: 41.66%;
 }
-.grid5-phone {
+ .grid6-phone {
  width: 50%;
 }
-.grid4-phone {
- width: 40%;
+ .grid7-phone {
+ width: 58.33%;
 }
-.grid3-phone {
- width: 30%;
+ .grid8-phone {
+ width: 66.66%;
 }
-.grid2-phone {
- width: 20%;
+ .grid9-phone {
+ width: 75%;
 }
-.grid1-phone {
- width: 10%;
+ .grid10-phone {
+ width: 83.33%;
+}
+.grid11-phone {
+ width: 91.66%;
+}
+.grid12-phone {
+ width: 100%;
 }
 }
 
@@ -745,40 +760,88 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endCo
  .grid-container {
  width: 300px;
 }
- .grid10-phone {
- width: 100%;
+ .grid1-phone {
+ width: 8.33%;
 }
-.grid9-phone {
- width:90%;
+ .grid2-phone {
+ width: 16.66%;
 }
-.grid8-phone {
- width: 80%;
+ .grid3-phone {
+ width: 25%;
 }
-.grid7-phone {
- width: 70;
+ .grid4-phone {
+ width: 33.33%;
 }
-.grid6-phone {
- width: 60%;
+ .grid5-phone {
+ width: 41.66%;
 }
-.grid5-phone {
+ .grid6-phone {
  width: 50%;
 }
-.grid4-phone {
- width: 40%;
+ .grid7-phone {
+ width: 58.33%;
 }
-.grid3-phone {
- width: 30%;
+ .grid8-phone {
+ width: 66.66%;
 }
-.grid2-phone {
- width: 20%;
+ .grid9-phone {
+ width: 75%;
 }
-.grid1-phone {
- width: 10%;
+ .grid10-phone {
+ width: 83.33%;
+}
+.grid11-phone {
+ width: 91.66%;
+}
+.grid12-phone {
+ width: 100%;
 }
 }
 
 /* iPads portrait and landscape */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+ .grid1-pc, .grid2-pc, .grid3-pc, .grid4-pc, .grid5-pc, .grid6-pc, .grid7-pc, .grid8-pc, .grid9-pc, .grid10-pc , .grid11-pc, .grid12-pc {
+ float: left;
+}
+ .grid1-pc {
+ width: 8.33%;
+}
+ .grid2-pc {
+ width: 16.66%;
+}
+ .grid3-pc {
+ width: 25%;
+}
+ .grid4-pc {
+ width: 33.33%;
+}
+ .grid5-pc {
+ width: 41.66%;
+}
+ .grid6-pc {
+ width: 50%;
+}
+ .grid7-pc {
+ width: 58.33%;
+}
+ .grid8-pc {
+ width: 66.66%;
+}
+ .grid9-pc {
+ width: 75%;
+}
+ .grid10-pc {
+ width: 83.33%;
+}
+.grid11-pc {
+ width: 91.66%;
+}
+.grid12-pc {
+ width: 100%;
+}
+
+
+
 }
 
 /* iPads landscape*/
@@ -786,39 +849,47 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endCo
  .grid-container {
  width: 1004px;
 }
- .grid1-pc, .grid2-pc, .grid3-pc, .grid4-pc, .grid5-pc, .grid6-pc, .grid7-pc, .grid8-pc, .grid9-pc, .grid10-pc {
+ .grid1-pc, .grid2-pc, .grid3-pc, .grid4-pc, .grid5-pc, .grid6-pc, .grid7-pc, .grid8-pc, .grid9-pc, .grid10-pc ,.grid11-pc, .grid12-pc {
  float: left;
 }
  .grid1-pc {
- width: 10%;
+ width: 8.33%;
 }
  .grid2-pc {
- width: 20%;
+ width: 16.66%;
 }
  .grid3-pc {
- width: 30%;
+ width: 25%;
 }
  .grid4-pc {
- width: 40%;
+ width: 33.33%;
 }
  .grid5-pc {
- width: 50%;
+ width: 41.66%;
 }
  .grid6-pc {
- width: 60%;
+ width: 50%;
 }
  .grid7-pc {
- width: 70%;
+ width: 58.33%;
 }
  .grid8-pc {
- width: 80%;
+ width: 66.66%;
 }
  .grid9-pc {
- width: 90%;
+ width: 75%;
 }
  .grid10-pc {
+ width: 83.33%;
+}
+.grid11-pc {
+ width: 91.66%;
+}
+.grid12-pc {
  width: 100%;
 }
+
+
 }
 
 /* iPads portrait*/
